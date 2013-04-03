@@ -1,0 +1,5 @@
+TARGETNAME=regsys
+TARGETPATH=$(BASEDIR)\lib
+TARGETTYPE=DRIVER
+
+SOURCES=regsys.c regsys.rc

@@ -1,0 +1,313 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+LISTMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Save\tCtrl+S",               IDM_SAVE
+        MENUITEM "Save &As...",                 IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Filter...\tCtrl+F",          IDM_FILTER
+        MENUITEM SEPARATOR
+        MENUITEM "&Capture Events\tCtrl+E",     IDM_CAPTURE, CHECKED
+        MENUITEM "&Auto Scroll\tCtrl+A",        IDM_AUTOSCROLL, CHECKED
+        MENUITEM "Always &On Top",              IDM_ONTOP
+        MENUITEM SEPARATOR
+        MENUITEM "Regedit &Jump\tCtrl+J",       IDM_JUMP
+        MENUITEM SEPARATOR
+        MENUITEM "C&lear Display\tCtrl+C",      IDM_CLEAR
+    END
+    POPUP "&Search"
+    BEGIN
+        MENUITEM "&Find...\tF3",                IDM_FIND
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help...",                    IDM_HELP
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+FILTER DIALOG DISCARDABLE  160, 78, 238, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Regmon Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PROCFILTER,74,8,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROCEXCLUDE,74,25,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PATHFILTER,74,42,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXCLUDEFILTER,74,59,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HISTORY,74,76,30,14,ES_AUTOHSCROLL
+    CONTROL         "Log Reads",IDC_LOGREADS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,96,57,10
+    CONTROL         "Log Writes",IDC_LOGWRITES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,112,57,10
+    CONTROL         "Log Success",IDC_SUCCESS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,96,57,10
+    CONTROL         "Log Errors",IDC_ERROR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,112,45,10
+    DEFPUSHBUTTON   "&Apply",IDOK,182,8,50,14
+    PUSHBUTTON      "&Reset",IDRESET,182,26,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,182,45,50,14
+    LTEXT           "Process Include(s):",IDC_STATIC,7,10,61,8
+    LTEXT           "Path Include(s):",IDC_STATIC,7,44,50,8
+    LTEXT           "Path Exclude(s):",IDC_STATIC,7,61,52,8
+    LTEXT           "History Depth:",IDC_STATIC,7,78,45,8
+    LTEXT           "Process Exclude(s):",IDC_STATIC,7,27,63,8
+END
+
+ABOUTBOX DIALOG DISCARDABLE  22, 17, 221, 69
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About Regmon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            "ICON",IDC_STATIC,11,9,20,20
+    LTEXT           "Regmon for Windows NT/9x v4.13\n\nCopyright © 1998\nMark Russinovich\nBryce Cogswell\nhttp://www.sysinternals.com",
+                    IDC_STATIC,41,11,113,51
+    PUSHBUTTON      "&OK",IDOK,159,43,50,14
+END
+
+INITFILTER DIALOG DISCARDABLE  160, 78, 238, 146
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Regmon Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PROCFILTER,74,27,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PROCEXCLUDE,74,44,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PATHFILTER,74,61,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXCLUDEFILTER,74,78,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HISTORY,74,95,30,14,ES_AUTOHSCROLL
+    CONTROL         "Log Reads",IDC_LOGREADS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,114,57,10
+    CONTROL         "Log Writes",IDC_LOGWRITES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,128,57,10
+    CONTROL         "Log Success",IDC_SUCCESS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,114,57,10
+    CONTROL         "Log Errors",IDC_ERROR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,92,128,45,10
+    DEFPUSHBUTTON   "&OK",IDOK,182,27,50,14
+    PUSHBUTTON      "&Reset",IDRESET,182,46,50,14
+    LTEXT           "Process Include(s):",IDC_STATIC,7,29,61,8
+    LTEXT           "Path Include(s):",IDC_STATIC,7,63,50,8
+    LTEXT           "Path Exclude(s):",IDC_STATIC,7,80,52,8
+    LTEXT           "History Depth:",IDC_STATIC,7,97,45,8
+    LTEXT           "Process Exclude(s):",IDC_STATIC,7,46,63,8
+    LTEXT           "These filters were in effect that last time you exited Regmon.\nThe configuration you enter will be active when monitoring starts.",
+                    IDC_STATIC,5,4,220,18
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "FILTER", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    "ABOUTBOX", DIALOG
+    BEGIN
+        RIGHTMARGIN, 209
+        BOTTOMMARGIN, 64
+    END
+
+    "INITFILTER", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ACCELERATORS ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            IDM_AUTOSCROLL,         VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_CLEAR,              VIRTKEY, CONTROL, NOINVERT
+    "E",            IDM_CAPTURE,            VIRTKEY, CONTROL, NOINVERT
+    "F",            IDM_FILTER,             VIRTKEY, CONTROL, NOINVERT
+    "J",            IDM_JUMP,               VIRTKEY, CONTROL, NOINVERT
+    "S",            IDM_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          IDM_FIND,               VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP  DISCARDABLE     "toolbar1.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,13,0,0
+ PRODUCTVERSION 4,13,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Systems Internals\0"
+            VALUE "FileDescription", "Regmon\0"
+            VALUE "FileVersion", "4.13\0"
+            VALUE "InternalName", "Regmon\0"
+            VALUE "LegalCopyright", "Copyright © 1996-1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Regmon.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Systems Internals Regmon\0"
+            VALUE "ProductVersion", "4.13\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ICON                    ICON    PRELOAD DISCARDABLE "icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_CAPTURE             "Capture (Ctrl+E)"
+    IDM_AUTOSCROLL          "Autoscroll (Ctrl+A)"
+    IDM_CLEAR               "Clear (Ctrl+C)"
+    IDM_FILTER              "Filter (Ctrl+F)"
+    IDM_FIND                "Find (F3)"
+    IDM_JUMP                "Regedit Jump (Ctrl+J)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SAVE                "Save (Ctrl+S)"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

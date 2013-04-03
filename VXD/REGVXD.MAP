@@ -1,0 +1,150 @@
+ REGVXD
+
+ Timestamp is 36c89b30 (Mon Feb 15 14:09:52 1999)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000012c0H .bss                    CODE
+ 0001:000012c0 00000544H _LDATA                  CODE
+ 0001:00001804 00002798H _LTEXT                  CODE
+ 0002:00000000 00000004H ICRTTEXT                CODE
+ 0002:00000004 00000004H ICRTXXXX                CODE
+ 0002:00000008 0000003cH _IDATA                  CODE
+ 0002:00000044 00000018H _ITEXT                  CODE
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000400       _RealRegSetValue           00401400     <common>
+ 0001:00000404       _RealRegEnumKey            00401404     <common>
+ 0001:00000408       _RealRegSetValueEx         00401408     <common>
+ 0001:00000420       _PathExcludeFilters        00401420     <common>
+ 0001:00000520       _RealRegQueryValue         00401520     <common>
+ 0001:00000524       _RealRegDeleteKey          00401524     <common>
+ 0001:00000540       _ROKThunk                  00401540     <common>
+ 0001:00000554       _RealRegCreateDynKey       00401554     <common>
+ 0001:00000560       _RCRKThunk                 00401560     <common>
+ 0001:00000574       _FilterMutex               00401574     <common>
+ 0001:00000578       _RealRegCloseKey           00401578     <common>
+ 0001:0000057c       _StoreMutex                0040157c     <common>
+ 0001:00000580       _RQVEThunk                 00401580     <common>
+ 0001:000005a0       _RCKThunk                  004015a0     <common>
+ 0001:000005c0       _RFKThunk                  004015c0     <common>
+ 0001:000005e0       _RSVEThunk                 004015e0     <common>
+ 0001:000005f4       _RealRegRemapPreDefKey     004015f4     <common>
+ 0001:00000600       _ProcessExcludeFilters     00401600     <common>
+ 0001:00000700       _RealRegQueryMultipleValues 00401700     <common>
+ 0001:00000720       _ProcessFilters            00401720     <common>
+ 0001:00000820       _FilterDef                 00401820     <common>
+ 0001:00000c40       _RDVThunk                  00401c40     <common>
+ 0001:00000c60       _RSVThunk                  00401c60     <common>
+ 0001:00000c74       _RealRegQueryInfoKey       00401c74     <common>
+ 0001:00000c80       _RDKThunk                  00401c80     <common>
+ 0001:00000c94       _HashMutex                 00401c94     <common>
+ 0001:00000c98       _RealRegEnumValue          00401c98     <common>
+ 0001:00000c9c       _VMMWin32ServiceTable      00401c9c     <common>
+ 0001:00000ca0       _RQVThunk                  00401ca0     <common>
+ 0001:00000cc0       _RCDKThunk                 00401cc0     <common>
+ 0001:00000cd4       _RealRegQueryValueEx       00401cd4     <common>
+ 0001:00000ce0       _RRPDKThunk                00401ce0     <common>
+ 0001:00000cf4       _RealWin32RegQueryInfoKey  00401cf4     <common>
+ 0001:00000cf8       _RealRegFlushKey           00401cf8     <common>
+ 0001:00000d00       _REVThunk                  00401d00     <common>
+ 0001:00000d20       _errstring                 00401d20     <common>
+ 0001:00000d40       _RealRegCreateKey          00401d40     <common>
+ 0001:00000d60       _RQMVThunk                 00401d60     <common>
+ 0001:00000d74       _RealRegDeleteValue        00401d74     <common>
+ 0001:00000d80       _RQIKThunk                 00401d80     <common>
+ 0001:00000d94       _RealRegOpenKey            00401d94     <common>
+ 0001:00000da0       _REKThunk                  00401da0     <common>
+ 0001:00000dc0       _PathIncludeFilters        00401dc0     <common>
+ 0001:00000ec0       _HashTable                 00401ec0     <common>
+ 0001:000012c0       _FilterOn                  004022c0     regmon.OBJ
+ 0001:000012c4       _NumProcessFilters         004022c4     regmon.OBJ
+ 0001:000012c8       _NumProcessExcludeFilters  004022c8     regmon.OBJ
+ 0001:000012cc       _NumPathIncludeFilters     004022cc     regmon.OBJ
+ 0001:000012d0       _NumPathExcludeFilters     004022d0     regmon.OBJ
+ 0001:000012d4       _FreeEntries               004022d4     regmon.OBJ
+ 0001:000012d8       _Store                     004022d8     regmon.OBJ
+ 0001:000012dc       _Sequence                  004022dc     regmon.OBJ
+ 0001:000012e0       _NumStore                  004022e0     regmon.OBJ
+ 0001:000012e4       _MaxStore                  004022e4     regmon.OBJ
+ 0001:000012e8       _The_DDB                   004022e8     regmon.OBJ
+ 0001:00001694       _VXD_SERVICE_TABLE         00402694     cfMS540:vsvctab.obj
+ 0001:00001694       _VXD_SERVICE_TABLE_SIZE    00402694     cfMS540:vsvctab.obj
+ 0001:00001704       _LOCK__CTAB                00402704     rtMS540:C002l.obj
+ 0001:00001804       _ControlDispatcher         00402804 f   regmon.OBJ
+ 0001:00001835       _MatchOkay                 00402835 f   regmon.OBJ
+ 0001:0000184d       _MatchWithPattern          0040284d f   regmon.OBJ
+ 0001:000018e3       _RegmonFreeStore           004028e3 f   regmon.OBJ
+ 0001:00001907       _RegmonNewStore            00402907 f   regmon.OBJ
+ 0001:0000196c       _RegmonOldestStore         0040296c f   regmon.OBJ
+ 0001:00001990       _RegmonResetStore          00402990 f   regmon.OBJ
+ 0001:000019be       _UpdateStore               004029be f   regmon.OBJ
+ 0001:00001a49       _RegmonHashCleanup         00402a49 f   regmon.OBJ
+ 0001:00001aa5       _RegmonStoreHash           00402aa5 f   regmon.OBJ
+ 0001:00001b40       _RegmonFreeHashEntry       00402b40 f   regmon.OBJ
+ 0001:00001bbc       _ErrorString               00402bbc f   regmon.OBJ
+ 0001:00001c81       _RegmonFreeFilters         00402c81 f   regmon.OBJ
+ 0001:00001d36       _MakeFilterArray           00402d36 f   regmon.OBJ
+ 0001:00001da1       _RegmonUpdateFilters       00402da1 f   regmon.OBJ
+ 0001:00001e12       _GetProcess                00402e12 f   regmon.OBJ
+ 0001:00001efb       _ApplyNameFilter           00402efb f   regmon.OBJ
+ 0001:00001f7c       _GetFullName               00402f7c f   regmon.OBJ
+ 0001:00002150       _HookRegOpenKey            00403150 f   regmon.OBJ
+ 0001:00002226       _HookRegCreateKey          00403226 f   regmon.OBJ
+ 0001:000022fc       _HookRegDeleteKey          004032fc f   regmon.OBJ
+ 0001:00002390       _HookRegDeleteValue        00403390 f   regmon.OBJ
+ 0001:00002424       _HookRegCloseKey           00403424 f   regmon.OBJ
+ 0001:000024bd       _HookRegFlushKey           004034bd f   regmon.OBJ
+ 0001:0000254d       _HookRegEnumKey            0040354d f   regmon.OBJ
+ 0001:000025f4       _HookRegEnumValue          004035f4 f   regmon.OBJ
+ 0001:00002839       _HookRegQueryInfoKey       00403839 f   regmon.OBJ
+ 0001:00002940       _HookRegQueryValue         00403940 f   regmon.OBJ
+ 0001:00002a55       _HookRegQueryValueEx       00403a55 f   regmon.OBJ
+ 0001:00002c3d       _HookRegSetValue           00403c3d f   regmon.OBJ
+ 0001:00002d4c       _HookRegSetValueEx         00403d4c f   regmon.OBJ
+ 0001:00002f08       _HookRegRemapPreDefKey     00403f08 f   regmon.OBJ
+ 0001:00002fa7       _HookRegQueryMultipleValues 00403fa7 f   regmon.OBJ
+ 0001:00003043       _HookRegCreateDynKey       00404043 f   regmon.OBJ
+ 0001:000030fd       _HookWin32RegQueryInfoKey@32 004040fd f   regmon.OBJ
+ 0001:00003200       _OnSysDynamicDeviceInit    00404200 f   regmon.OBJ
+ 0001:0000341a       _OnSysDynamicDeviceExit    0040441a f   regmon.OBJ
+ 0001:0000352e       _OnW32Deviceiocontrol      0040452e f   regmon.OBJ
+ 0001:000036ab       _LocalPMhandler            004046ab f   cfMS540:control.obj
+ 0001:000036b5       _LocalV86handler           004046b5 f   cfMS540:control.obj
+ 0001:000036bf       _LocalControlDispatcher    004046bf f   cfMS540:control.obj
+ 0001:000036f4       _PM_Api_Handler            004046f4 f   cfMS540:pmapi.obj
+ 0001:000036f8       _V86_Api_Handler           004046f8 f   cfMS540:v86api.obj
+ 0001:000036f9       _LOCK_vsprintf             004046f9 f   rtMS540:C048l.obj
+ 0001:00003711       _LOCK_sprintf              00404711 f   rtMS540:C041l.obj
+ 0001:0000372a       _LOCK_strncpy              0040472a f   rtMS540:C028l.obj
+ 0001:00003751       _LOCK_strncat              00404751 f   rtMS540:C030l.obj
+ 0001:00003780       _LOCK__vsnprintf           00404780 f   rtMS540:C047l.obj
+ 0001:00003cba       _LOCK_free                 00404cba f   rtMS540:C001l.obj
+ 0001:00003ccb       _LOCK__ltoa                00404ccb f   rtMS540:C012l.obj
+ 0001:00003d5b       _LOCK__strupr              00404d5b f   rtMS540:C025l.obj
+ 0001:00003d81       _LOCK__ultoa               00404d81 f   rtMS540:C010l.obj
+ 0001:00003df7       _LOCK_malloc               00404df7 f   rtMS540:C043l.obj
+ 0001:00003e08       _LOCK__PageFree            00404e08 f   wr0MS940:VW058l.obj
+ 0001:00003e10       _LOCK__PageAllocate@40     00404e10 f   wr0MS940:VW061l.obj
+ 0001:00003e50       _LOCK_Signal_Semaphore@4   00404e50 f   wr0MS940:VW022l.obj
+ 0001:00003e60       _LOCK_Wait_Semaphore@8     00404e60 f   wr0MS940:VW003l.obj
+ 0001:00003e74       _LOCK__HeapFree            00404e74 f   wr0MS940:VW110l.obj
+ 0001:00003e7c       _LOCK__HeapAllocate        00404e7c f   wr0MS940:VW111l.obj
+ 0001:00003e84       _LOCK__SelectorMapFlat     00404e84 f   wr0MS940:VW040l.obj
+ 0001:00003e8c       _LOCK_Get_Sys_VM_Handle@0  00404e8c f   wr0MS940:VW121l.obj
+ 0001:00003e9c       _LOCK_Get_DDB@8            00404e9c f   wr0MS940:VW242l.obj
+ 0001:00003eb4       _LOCK_Create_Semaphore@4   00404eb4 f   wr0MS940:VW186l.obj
+ 0001:00003ec8       _LOCK_VWIN32_GetCurrentProcessHandle 00404ec8 f   wr3MS940:VW812l.obj
+ 0001:00003ed0       _LOCK_Hook_Device_Service_C@12 00404ed0 f   wr3MS940:VW904l.obj
+ 0001:00003f14       _LOCK_Unhook_Device_Service_C@8 00404f14 f   wr3MS940:VW905l.obj
+ 0001:00003f34       _LOCK_UniToBCS             00404f34 f   wr3MS940:VW733l.obj
+ 0001:00003f5c       __InitThunk                00404f5c f   wr3MS940:VW970.obj
+ 0001:00003f84       _DeviceServiceC_thunkTEMPLATE 00404f84     wr3MS940:VW989.obj
+ 0002:00000044       INITCRT                    00405044     ICRTMS9.OBJ
+
+ entry point at        0000:00000000
+
+ Static symbols
+
